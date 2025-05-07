@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gamas de Celulares</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
     }
     header {
-      background: #1e90ff;
+      background-color: #1e90ff;
       color: white;
-      padding: 30px;
       text-align: center;
+      padding: 30px 20px;
     }
     main {
       max-width: 1000px;
@@ -34,10 +34,11 @@
     }
     img {
       width: 100%;
-      max-width: 600px;
+      max-width: 500px;
       height: auto;
-      margin: 10px 0;
-      border-radius: 8px;
+      display: block;
+      margin: 10px auto;
+      border-radius: 10px;
     }
     table {
       width: 100%;
@@ -50,137 +51,79 @@
       text-align: center;
     }
     th {
-      background: #1e90ff;
+      background-color: #1e90ff;
       color: white;
     }
     ul {
       padding-left: 20px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    input, textarea {
-      padding: 10px;
-      font-size: 1em;
-    }
-    button {
-      background-color: #1e90ff;
-      color: white;
-      padding: 10px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    button:hover {
-      background-color: #006ad1;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Gamas de Celulares</h1>
-    <p>Descubre las diferencias entre las gamas baja, media y alta</p>
+    <p>Descubre las diferencias entre la gama baja, media y alta</p>
   </header>
+
   <main>
     <section>
       <h2>Gama Baja</h2>
-      <img src="https://i.imgur.com/62Yo62S.jpg" alt="Celular Gama Baja">
-      <p>Los celulares de gama baja están diseñados para tareas básicas como llamadas, mensajería, redes sociales y navegación web ligera.</p>
+      <img src="https://github.com/dwisenhaim/gamas-de-celulares-/blob/f1af59b1db9cfa27c6d26a450459608492842c86/descarga.jpeg?raw=true" alt="Celular Gama Baja">
+      <p>Los celulares de gama baja están diseñados para tareas básicas como llamadas, mensajería, redes sociales y navegación web ligera. Son ideales para usuarios con presupuesto limitado o que no requieren alto rendimiento.</p>
     </section>
+
     <section>
       <h2>Gama Media</h2>
-      <img src="https://i.imgur.com/7KkEgmv.jpg" alt="Celular Gama Media">
-      <p>La gama media ofrece un equilibrio entre precio y rendimiento. Son una excelente opción para la mayoría de los usuarios.</p>
+      <img src="https://github.com/dwisenhaim/gamas-de-celulares-/blob/f1af59b1db9cfa27c6d26a450459608492842c86/descarga%20(1).jpeg?raw=true" alt="Celular Gama Media">
+      <p>La gama media ofrece un equilibrio entre precio y rendimiento. Estos teléfonos suelen tener mejores cámaras, procesadores más rápidos y pantallas de mayor calidad. Son una excelente opción para la mayoría de los usuarios.</p>
     </section>
+
     <section>
       <h2>Gama Alta</h2>
-      <img src="https://i.imgur.com/I4QOr08.jpg" alt="Celular Gama Alta">
-      <p>Los celulares de gama alta incorporan las últimas tecnologías, pantallas de alta resolución y cámaras de nivel profesional.</p>
+      <img src="https://github.com/dwisenhaim/gamas-de-celulares-/blob/f1af59b1db9cfa27c6d26a450459608492842c86/descarga%20(2).jpeg?raw=true" alt="Celular Gama Alta">
+      <p>Los celulares de gama alta son los más avanzados del mercado. Incorporan las últimas tecnologías, potentes procesadores, pantallas de alta resolución, múltiples cámaras de calidad profesional y funciones premium.</p>
     </section>
+
     <section>
       <h2>Tabla Comparativa</h2>
       <table>
-        <thead>
-          <tr>
-            <th>Característica</th>
-            <th>Gama Baja</th>
-            <th>Gama Media</th>
-            <th>Gama Alta</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Precio</td>
-            <td>Bajo (~$100 - $200)</td>
-            <td>Medio (~$250 - $500)</td>
-            <td>Alto (~$800 - $1500)</td>
-          </tr>
-          <tr>
-            <td>Rendimiento</td>
-            <td>Básico</td>
-            <td>Moderado</td>
-            <td>Alto</td>
-          </tr>
-          <tr>
-            <td>Cámara</td>
-            <td>Simple</td>
-            <td>Buena</td>
-            <td>Profesional</td>
-          </tr>
-          <tr>
-            <td>Pantalla</td>
-            <td>HD</td>
-            <td>Full HD</td>
-            <td>QHD o superior</td>
-          </tr>
-          <tr>
-            <td>Funciones</td>
-            <td>Básicas</td>
-            <td>Avanzadas</td>
-            <td>Premium</td>
-          </tr>
-        </tbody>
+        <tr>
+          <th>Característica</th>
+          <th>Gama Baja</th>
+          <th>Gama Media</th>
+          <th>Gama Alta</th>
+        </tr>
+        <tr>
+          <td>Precio</td>
+          <td>$100 - $200</td>
+          <td>$250 - $500</td>
+          <td>$800 - $1500</td>
+        </tr>
+        <tr>
+          <td>Rendimiento</td>
+          <td>Básico</td>
+          <td>Moderado</td>
+          <td>Alto</td>
+        </tr>
+        <tr>
+          <td>Cámara</td>
+          <td>Simple</td>
+          <td>Buena</td>
+          <td>Profesional</td>
+        </tr>
+        <tr>
+          <td>Pantalla</td>
+          <td>HD</td>
+          <td>Full HD</td>
+          <td>QHD o superior</td>
+        </tr>
+        <tr>
+          <td>Funciones</td>
+          <td>Básicas</td>
+          <td>Avanzadas</td>
+          <td>Premium</td>
+        </tr>
       </table>
-    </section>
-    <section>
-      <h2>Ventajas y Desventajas</h2>
-      <ul>
-        <li><strong>Gama Baja:</strong> + Precio accesible, - Bajo rendimiento.</li>
-        <li><strong>Gama Media:</strong> + Buen equilibrio, - No siempre tienen lo último.</li>
-        <li><strong>Gama Alta:</strong> + Máximo rendimiento, - Costo elevado.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Modelos Populares</h2>
-      <table>
-        <tr><th>Gama</th><th>Modelos</th><th>Precio Aproximado</th></tr>
-        <tr><td>Gama Baja</td><td>Samsung Galaxy A04, Xiaomi Redmi A2, Moto E22</td><td>~$100 - $200</td></tr>
-        <tr><td>Gama Media</td><td>Samsung Galaxy A54, Xiaomi Redmi Note 13, Motorola G73</td><td>~$250 - $500</td></tr>
-        <tr><td>Gama Alta</td><td>iPhone 15 Pro, Samsung Galaxy S24 Ultra, Xiaomi 14 Pro</td><td>~$800 - $1500</td></tr>
-      </table>
-    </section>
-    <section>
-      <h2>¿Cuál me conviene?</h2>
-      <p>Si solo necesitas un celular para llamadas y apps básicas, una gama baja puede ser suficiente. Si juegas, estudias o ves muchos videos, una gama media es ideal. Para fotografía profesional, diseño o gaming exigente, ve por gama alta.</p>
-    </section>
-    <section>
-      <h2>Preguntas Frecuentes</h2>
-      <ul>
-        <li><strong>¿Puedo jugar en un celular de gama baja?</strong> Sí, pero juegos simples.</li>
-        <li><strong>¿Vale la pena pagar más por gama alta?</strong> Si necesitas potencia y calidad máxima, sí.</li>
-        <li><strong>¿Cuál dura más?</strong> Los de gama media y alta suelen recibir más actualizaciones y tener mejor batería.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Contacto / Sugerencias</h2>
-      <form>
-        <input type="text" placeholder="Tu nombre" required />
-        <input type="email" placeholder="Tu correo" required />
-        <textarea rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
     </section>
   </main>
 </body>
