@@ -5,16 +5,17 @@
   <title>Valhalla Mobile - Gamas de Celulares</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
       margin: 0;
       padding: 0;
     }
     header {
       background-color: #1e90ff;
       color: white;
-      padding: 20px;
+      padding: 30px;
       text-align: center;
+      font-size: 24px;
     }
     nav {
       background-color: #0b74c1;
@@ -35,6 +36,7 @@
       padding: 15px 20px;
       color: white;
       text-decoration: none;
+      font-weight: bold;
     }
     nav li:hover ul {
       display: block;
@@ -52,27 +54,43 @@
       width: 100%;
     }
     main {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
       padding: 20px;
     }
     section {
       background: white;
       padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     h2 {
       color: #1e90ff;
+      font-size: 28px;
     }
     img {
       width: 100%;
-      max-width: 500px;
+      max-width: 450px;
       height: auto;
       display: block;
       margin: 10px auto;
-      border-radius: 10px;
+      border-radius: 12px;
+    }
+    .buy-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .buy-button:hover {
+      background-color: #218838;
     }
     table {
       width: 100%;
@@ -93,7 +111,7 @@
 <body>
   <header>
     <h1>Valhalla Mobile</h1>
-    <p>Explora las gamas de celulares que se adaptan a tus necesidades</p>
+    <p>La mejor selección de celulares por gama en 2025</p>
   </header>  <nav>
     <ul>
       <li><a href="#">Inicio</a></li>
@@ -104,101 +122,85 @@
           <li><a href="#gama-alta">Gama Alta</a></li>
         </ul>
       </li>
-      <li><a href="#comparativa">Comparativa</a></li>
     </ul>
   </nav>  <main>
     <section id="gama-baja">
       <h2>Gama Baja</h2>
-      <p>Diseñados para tareas básicas como llamadas, mensajería, navegación sencilla y redes sociales ligeras. Ideales para usuarios con necesidades limitadas o para quienes buscan un segundo dispositivo económico.</p>
+      <p>Los celulares de gama baja están enfocados en tareas básicas. Ideales para quienes buscan funcionalidad sin gastar demasiado.</p>
+      <h3>Xiaomi Redmi A3</h3>
+      <img src="https://i.blogs.es/a12323/xiaomi-redmi-a3/1366_2000.jpeg" alt="Xiaomi Redmi A3">
       <ul>
-        <li><strong>Xiaomi Redmi A2:</strong> Pantalla de 6.52", procesador MediaTek Helio G36, 2GB RAM, 32GB de almacenamiento, batería de 5000mAh.</li>
-        <li><strong>Samsung Galaxy A04e:</strong> Pantalla HD+ de 6.5", procesador MediaTek Helio P35, 3GB RAM, 64GB de almacenamiento, cámara dual de 13 MP.</li>
-        <li><strong>Motorola Moto E13:</strong> Pantalla IPS LCD de 6.5", Unisoc T606, 2/4GB RAM, 64GB almacenamiento, batería de larga duración.</li>
+        <li>Pantalla: 6.71" HD+ LCD</li>
+        <li>Procesador: MediaTek Helio G36</li>
+        <li>RAM: 3GB</li>
+        <li>Almacenamiento: 64GB</li>
+        <li>Cámara trasera: 8 MP</li>
+        <li>Batería: 5000 mAh</li>
+        <li><a href="https://www.mi.com" class="buy-button" target="_blank">Comprar</a></li>
+      </ul>
+      <h3>Samsung Galaxy A04</h3>
+      <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a045mzkearo/gallery/ar-galaxy-a04-sm-a045-sm-a045mzkearo-534708687" alt="Samsung Galaxy A04">
+      <ul>
+        <li>Pantalla: 6.5" PLS LCD</li>
+        <li>Procesador: Helio P35</li>
+        <li>RAM: 4GB</li>
+        <li>Almacenamiento: 64GB</li>
+        <li>Cámara trasera: Dual 50 MP + 2 MP</li>
+        <li>Batería: 5000 mAh</li>
+        <li><a href="https://www.samsung.com" class="buy-button" target="_blank">Comprar</a></li>
       </ul>
     </section><section id="gama-media">
   <h2>Gama Media</h2>
-  <p>Ofrecen un equilibrio perfecto entre precio y prestaciones. Son adecuados para multitarea, juegos moderados, fotografía aceptable y consumo multimedia. </p>
+  <p>Gran rendimiento, ideal para fotografía casual, redes sociales y apps exigentes.</p>
+  <h3>Motorola G73 5G</h3>
+  <img src="https://motorolaes.vtexassets.com/arquivos/ids/161206-800-auto?v=638312702438300000&width=800&height=auto&aspect=true" alt="Motorola G73">
   <ul>
-    <li><strong>Xiaomi Redmi Note 13:</strong> Pantalla AMOLED de 6.67" FHD+, Snapdragon 685, 6/8GB RAM, cámara principal de 108 MP, batería de 5000mAh con carga rápida.</li>
-    <li><strong>Samsung Galaxy A54:</strong> Super AMOLED 120Hz, Exynos 1380, 8GB RAM, 128/256GB almacenamiento, cámara triple con sensor principal de 50 MP.</li>
-    <li><strong>Motorola Edge 40 Neo:</strong> Pantalla pOLED curva, MediaTek Dimensity 7030, 12GB RAM, cámara ultra angular, batería con carga rápida de 68W.</li>
+    <li>Pantalla: 6.5" Full HD+ 120Hz</li>
+    <li>Procesador: Dimensity 930</li>
+    <li>RAM: 8GB</li>
+    <li>Almacenamiento: 128GB</li>
+    <li>Cámara trasera: Dual 50 MP + 8 MP ultra gran angular</li>
+    <li>Batería: 5000 mAh, carga rápida 30W</li>
+    <li><a href="https://www.motorola.com" class="buy-button" target="_blank">Comprar</a></li>
+  </ul>
+  <h3>Samsung Galaxy A34</h3>
+  <img src="https://images.samsung.com/is/image/samsung/p6pim/latin/2303/gallery/latin-galaxy-a34-5g-sm-a346-sm-a346mzwdgto-534928699" alt="Samsung Galaxy A34">
+  <ul>
+    <li>Pantalla: 6.6" Super AMOLED 120Hz</li>
+    <li>Procesador: Dimensity 1080</li>
+    <li>RAM: 6GB</li>
+    <li>Almacenamiento: 128GB</li>
+    <li>Cámara trasera: Triple 48 MP + 8 MP + 5 MP</li>
+    <li>Batería: 5000 mAh, carga rápida 25W</li>
+    <li><a href="https://www.samsung.com" class="buy-button" target="_blank">Comprar</a></li>
   </ul>
 </section>
 
 <section id="gama-alta">
   <h2>Gama Alta</h2>
-  <p>Dispositivos premium con la mejor tecnología disponible. Excelente rendimiento para juegos exigentes, edición multimedia y funciones de productividad.</p>
+  <p>Para quienes exigen lo mejor: cámaras profesionales, pantallas de altísima calidad y potencia de sobra.</p>
+  <h3>Samsung Galaxy S24 Ultra</h3>
+  <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/2401/gallery/ar-galaxy-s24-ultra-s928-sm-s928bztlaro-539654743" alt="Samsung Galaxy S24 Ultra">
   <ul>
-    <li><strong>Samsung Galaxy S24 Ultra:</strong> Pantalla QHD+ AMOLED 6.8", Snapdragon 8 Gen 3, hasta 1TB de almacenamiento, cámara de 200 MP con zoom óptico 10x.</li>
-    <li><strong>iPhone 15 Pro Max:</strong> Pantalla Super Retina XDR, chip A17 Pro, cámara triple con sensor LiDAR, grabación ProRes, titanio grado aeroespacial.</li>
-    <li><strong>Google Pixel 8 Pro:</strong> Pantalla OLED LTPO 120Hz, chip Tensor G3, cámara con inteligencia artificial avanzada, actualizaciones garantizadas por 7 años.</li>
+    <li>Pantalla: 6.8" QHD+ AMOLED 120Hz</li>
+    <li>Procesador: Snapdragon 8 Gen 3</li>
+    <li>RAM: 12GB</li>
+    <li>Almacenamiento: 256GB/512GB/1TB</li>
+    <li>Cámara trasera: Cuádruple 200 MP + 50 MP + 12 MP + 10 MP</li>
+    <li>Batería: 5000 mAh, carga rápida e inalámbrica</li>
+    <li><a href="https://www.samsung.com" class="buy-button" target="_blank">Comprar</a></li>
   </ul>
-</section>
-
-<section id="comparativa">
-  <h2>Tabla Comparativa Detallada</h2>
-  <table>
-    <tr>
-      <th>Característica</th>
-      <th>Gama Baja</th>
-      <th>Gama Media</th>
-      <th>Gama Alta</th>
-    </tr>
-    <tr>
-      <td>Precio</td>
-      <td>$100 - $200</td>
-      <td>$250 - $500</td>
-      <td>$800 - $1500</td>
-    </tr>
-    <tr>
-      <td>Pantalla</td>
-      <td>LCD HD+ 60Hz</td>
-      <td>AMOLED/IPS FHD+ 90Hz</td>
-      <td>AMOLED/LTPO QHD+ 120Hz</td>
-    </tr>
-    <tr>
-      <td>Procesador</td>
-      <td>MediaTek Helio/Unisoc</td>
-      <td>Snapdragon 6xx/7xx, Exynos, Dimensity</td>
-      <td>Snapdragon 8 Gen, A17 Pro, Tensor G3</td>
-    </tr>
-    <tr>
-      <td>RAM</td>
-      <td>2 - 4 GB</td>
-      <td>6 - 12 GB</td>
-      <td>12 - 16 GB</td>
-    </tr>
-    <tr>
-      <td>Almacenamiento</td>
-      <td>32 - 64 GB</td>
-      <td>128 - 256 GB</td>
-      <td>256 GB - 1 TB</td>
-    </tr>
-    <tr>
-      <td>Cámara</td>
-      <td>1-2 lentes, 13 MP</td>
-      <td>Triple cámara 50-108 MP</td>
-      <td>Triple/cuádruple cámara hasta 200 MP</td>
-    </tr>
-    <tr>
-      <td>Seguridad</td>
-      <td>PIN/Patrón</td>
-      <td>Huella dactilar, reconocimiento facial</td>
-      <td>Biometría avanzada, Face ID</td>
-    </tr>
-    <tr>
-      <td>Actualizaciones</td>
-      <td>1 año</td>
-      <td>2-3 años</td>
-      <td>5-7 años</td>
-    </tr>
-    <tr>
-      <td>Materiales</td>
-      <td>Plástico</td>
-      <td>Plástico/vidrio</td>
-      <td>Aluminio/titanio/vidrio reforzado</td>
-    </tr>
-  </table>
+  <h3>iPhone 15 Pro Max</h3>
+  <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309?wid=5120&hei=2880&fmt=jpeg&qlt=90&.v=1692923769629" alt="iPhone 15 Pro Max">
+  <ul>
+    <li>Pantalla: 6.7" OLED Super Retina XDR</li>
+    <li>Procesador: Apple A17 Pro</li>
+    <li>RAM: 8GB</li>
+    <li>Almacenamiento: 256GB/512GB/1TB</li>
+    <li>Cámara trasera: Triple 48 MP + 12 MP + 12 MP teleobjetivo</li>
+    <li>Batería: hasta 29 horas de video, carga MagSafe</li>
+    <li><a href="https://www.apple.com" class="buy-button" target="_blank">Comprar</a></li>
+  </ul>
 </section>
 
   </main>
