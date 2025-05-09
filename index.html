@@ -1,129 +1,67 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valhalla Móvil - Gama Baja</title>
-  <style>
-    body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
-    h1, h2, h3 { color: #2e3d49; }
-    .container { max-width: 1200px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; }
-    table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
-    th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
-    th { background-color: #e0e0e0; }
-    img { max-width: 150px; display: block; margin: 10px auto; }
-    .ficha { margin-bottom: 40px; }
-    .ficha img { max-width: 200px; }
-    .buy-link { background: #007BFF; color: white; padding: 8px 12px; border-radius: 4px; text-decoration: none; }
-    .buy-link:hover { background: #0056b3; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valhalla Móvil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <h1>Gama Baja - Valhalla Móvil</h1><h2>Tabla Comparativa</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Modelo</th>
-      <th>Pantalla</th>
-      <th>Procesador</th>
-      <th>RAM</th>
-      <th>Almacenamiento</th>
-      <th>Cámara Principal</th>
-      <th>Batería</th>
-      <th>Precio</th>
-      <th>Comprar</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Redmi A2</td>
-      <td>6.52" HD+</td>
-      <td>MediaTek Helio G36</td>
-      <td>2 GB</td>
-      <td>32 GB</td>
-      <td>8 MP</td>
-      <td>5000 mAh</td>
-      <td>$1,999 MXN</td>
-      <td><a class="buy-link" href="https://www.bodegaaurrera.com.mx/ip/smartphones/smartphone-xiaomi-redmi-a2-64-gb-negro-desbloqueado/00694181274847" target="_blank">Comprar</a></td>
-    </tr>
-    <tr>
-      <td>Galaxy A04e</td>
-      <td>6.5" HD+</td>
-      <td>MediaTek Helio P35</td>
-      <td>3 GB</td>
-      <td>64 GB</td>
-      <td>13 MP</td>
-      <td>5000 mAh</td>
-      <td>$2,999 MXN</td>
-      <td><a class="buy-link" href="https://www.walmart.com.mx/ip/smartphones/samsung-galaxy-a04e-smartphone-de-64-gb-en-color-azul-claro-desbloqueado/00880609479767" target="_blank">Comprar</a></td>
-    </tr>
-    <tr>
-      <td>Moto E13</td>
-      <td>6.5" HD+</td>
-      <td>Unisoc T606</td>
-      <td>2 GB</td>
-      <td>64 GB</td>
-      <td>13 MP</td>
-      <td>5000 mAh</td>
-      <td>$1,624 MXN</td>
-      <td><a class="buy-link" href="https://www.elektra.mx/motorola-moto-e13-64gb-telcel-r9-negro-31057298/p" target="_blank">Comprar</a></td>
-    </tr>
-  </tbody>
-</table>
+<body class="bg-gray-100 text-gray-800">
 
-<h2>Fichas Técnicas</h2>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="/mnt/data/file-NrBJ7yXE1eDFKK2PSNdoXo" alt="Logo Valhalla Móvil" class="h-12 w-12 rounded-full border-2 border-white" />
+        <h1 class="text-2xl font-bold tracking-wide">Valhalla Móvil</h1>
+      </div>
 
-<div class="ficha">
-  <h3>Redmi A2</h3>
-  <img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/3f9a1f1d-9c2a-4f6e-b6c1-3e0b4d4b1e4f.7e3b8e1e2c3e4d5f8a9b0c1d2e3f4a5b.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Redmi A2">
-  <ul>
-    <li>Sistema Operativo: Android 12 Go Edition</li>
-    <li>Pantalla: 6.52” HD+ LCD</li>
-    <li>Procesador: MediaTek Helio G36</li>
-    <li>RAM: 2 GB</li>
-    <li>Almacenamiento: 32 GB (expandible)</li>
-    <li>Cámara Principal: 8 MP</li>
-    <li>Cámara Frontal: 5 MP</li>
-    <li>Batería: 5000 mAh</li>
-    <li>Carga: 10W</li>
-    <li>Otros: Dual SIM, microUSB</li>
-  </ul>
-</div>
+      <!-- Dropdown Menu -->
+      <div class="relative group">
+        <button class="text-lg font-semibold px-4 py-2 bg-white text-indigo-600 rounded hover:bg-gray-100 transition">
+          Menú
+        </button>
+        <ul class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+          <li><a href="#inicio" class="block px-4 py-2 hover:bg-indigo-100 text-gray-800">Inicio</a></li>
+          <li><a href="#gama-baja" class="block px-4 py-2 hover:bg-indigo-100 text-gray-800">Gama Baja</a></li>
+          <li><a href="#gama-media" class="block px-4 py-2 hover:bg-indigo-100 text-gray-800">Gama Media</a></li>
+          <li><a href="#gama-alta" class="block px-4 py-2 hover:bg-indigo-100 text-gray-800">Gama Alta</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-<div class="ficha">
-  <h3>Galaxy A04e</h3>
-  <img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/2f9a1f1d-9c2a-4f6e-b6c1-3e0b4d4b1e4f.7e3b8e1e2c3e4d5f8a9b0c1d2e3f4a5b.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Galaxy A04e">
-  <ul>
-    <li>Sistema Operativo: Android 12 con One UI Core</li>
-    <li>Pantalla: 6.5” HD+ PLS LCD</li>
-    <li>Procesador: MediaTek Helio P35</li>
-    <li>RAM: 3 GB</li>
-    <li>Almacenamiento: 64 GB (expandible)</li>
-    <li>Cámara Principal: 13 MP + 2 MP profundidad</li>
-    <li>Cámara Frontal: 5 MP</li>
-    <li>Batería: 5000 mAh</li>
-    <li>Carga: 15W</li>
-    <li>Otros: USB-C, Dolby Atmos</li>
-  </ul>
-</div>
+  <!-- Hero -->
+  <section id="inicio" class="bg-cover bg-center h-[60vh] flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9');">
+    <div class="bg-black bg-opacity-60 p-10 rounded-xl text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Explora el mundo de los celulares</h2>
+      <p class="text-lg md:text-xl">Comparativas, análisis y todo sobre las gamas móviles</p>
+    </div>
+  </section>
 
-<div class="ficha">
-  <h3>Moto E13</h3>
-  <img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/1f9a1f1d-9c2a-4f6e-b6c1-3e0b4d4b1e4f.7e3b8e1e2c3e4d5f8a9b0c1d2e3f4a5b.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Moto E13">
-  <ul>
-    <li>Sistema Operativo: Android 13 Go Edition</li>
-    <li>Pantalla: 6.5” HD+ IPS LCD</li>
-    <li>Procesador: Unisoc T606</li>
-    <li>RAM: 2 GB</li>
-    <li>Almacenamiento: 64 GB (expandible)</li>
-    <li>Cámara Principal: 13 MP</li>
-    <li>Cámara Frontal: 5 MP</li>
-    <li>Batería: 5000 mAh</li>
-    <li>Carga: 10W</li>
-    <li>Otros: USB-C, resistencia IP52</li>
-  </ul>
-</div>
+  <!-- Contenido futuro -->
+  <main class="max-w-7xl mx-auto px-4 py-12">
+    <section id="gama-baja" class="mb-12">
+      <h3 class="text-2xl font-semibold mb-4">Gama Baja</h3>
+      <p class="text-gray-600">Contenido próximamente.</p>
+    </section>
+    <section id="gama-media" class="mb-12">
+      <h3 class="text-2xl font-semibold mb-4">Gama Media</h3>
+      <p class="text-gray-600">Contenido próximamente.</p>
+    </section>
+    <section id="gama-alta">
+      <h3 class="text-2xl font-semibold mb-4">Gama Alta</h3>
+      <p class="text-gray-600">Contenido próximamente.</p>
+    </section>
+  </main>
 
-  </div>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+      &copy; 2025 Valhalla Móvil. Todos los derechos reservados.
+    </div>
+  </footer>
+
 </body>
 </html>
