@@ -1,4 +1,196 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valhalla Mobile - Gamas de Celulares</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #1e90ff, #0b74c1);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #0b74c1;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      position: relative;
+    }
+    nav a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+    }
+    nav li:hover ul {
+      display: block;
+    }
+    nav ul ul {
+      display: none;
+      position: absolute;
+      background-color: #0b74c1;
+      top: 100%;
+      left: 0;
+      min-width: 180px;
+      z-index: 1000;
+    }
+    nav ul ul li {
+      width: 100%;
+    }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #1e90ff;
+      border-bottom: 2px solid #1e90ff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    img.phone-img {
+      width: 100%;
+      max-width: 400px;
+      margin: 15px auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #1e90ff;
+      color: white;
+    }
+    a.btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #1e90ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    a.btn:hover {
+      background-color: #0b74c1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Valhalla Mobile</h1>
+    <p>Explora las gamas de celulares que se adaptan a tus necesidades</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Gamas</a>
+        <ul>
+          <li><a href="#gama-baja">Gama Baja</a></li>
+          <li><a href="#gama-media">Gama Media</a></li>
+          <li><a href="#gama-alta">Gama Alta</a></li>
+        </ul>
+      </li>
+      <li><a href="#comparativa">Comparativas</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="gama-baja">
+      <h2>Gama Baja</h2>
+      <h3>Xiaomi Redmi A2</h3>
+      <img src="https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-a2/specs01.png" alt="Xiaomi Redmi A2" class="phone-img">
+      <ul>
+        <li>Pantalla: 6.52" HD+</li>
+        <li>Procesador: MediaTek Helio G36</li>
+        <li>RAM: 2/3 GB</li>
+        <li>Almacenamiento: 32/64 GB</li>
+        <li>Cámara: 8 MP trasera / 5 MP frontal</li>
+        <li>Batería: 5000 mAh</li>
+        <li>Sistema: Android 13 (Go edition)</li>
+      </ul>
+      <a class="btn" href="https://www.mi.com/es/product/redmi-a2/" target="_blank">Comprar</a>
+
+      <h3>Samsung Galaxy A04e</h3>
+      <img src="https://images.samsung.com/is/image/samsung/p6pim/es/sm-a042flbgmeb/gallery/es-galaxy-a04e-sm-a042-sm-a042flbgmeb-thumb-535637706?$480_480_PNG$" alt="Samsung Galaxy A04e" class="phone-img">
+      <ul>
+        <li>Pantalla: 6.5" HD+</li>
+        <li>Procesador: MediaTek Helio P35</li>
+        <li>RAM: 3 GB</li>
+        <li>Almacenamiento: 32/64 GB</li>
+        <li>Cámara: Dual 13 MP + 2 MP / 5 MP frontal</li>
+        <li>Batería: 5000 mAh</li>
+        <li>Sistema: Android 12</li>
+      </ul>
+      <a class="btn" href="https://www.samsung.com/es/smartphones/galaxy-a/galaxy-a04e-blue-32gb-sm-a042flbgmeb/" target="_blank">Comprar</a>
+
+      <h3>Tabla Comparativa - Gama Baja</h3>
+      <table>
+        <tr>
+          <th>Modelo</th>
+          <th>Pantalla</th>
+          <th>Procesador</th>
+          <th>RAM</th>
+          <th>Almacenamiento</th>
+          <th>Cámara</th>
+          <th>Batería</th>
+        </tr>
+        <tr>
+          <td>Xiaomi Redmi A2</td>
+          <td>6.52" HD+</td>
+          <td>Helio G36</td>
+          <td>2/3 GB</td>
+          <td>32/64 GB</td>
+          <td>8 MP / 5 MP</td>
+          <td>5000 mAh</td>
+        </tr>
+        <tr>
+          <td>Samsung Galaxy A04e</td>
+          <td>6.5" HD+</td>
+          <td>Helio P35</td>
+          <td>3 GB</td>
+          <td>32/64 GB</td>
+          <td>13+2 MP / 5 MP</td>
+          <td>5000 mAh</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+</body>
+</html><!DOCTYPE html><html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -188,4 +380,63 @@
 
   </main>
 </body>
-</html>
+</html><section id="gama-alta">
+  <h2>Gama Alta</h2>
+
+  <h3>Apple iPhone 14 Pro</h3>
+  <img src="https://www.apple.com/v/iphone-14/b/images/overview/hero/iphone_14_pro_hero__drt3doq9j8iy_large_2x.jpg" alt="Apple iPhone 14 Pro" class="phone-img">
+  <ul>
+    <li>Pantalla: 6.1" Super Retina XDR OLED</li>
+    <li>Procesador: A16 Bionic</li>
+    <li>RAM: 6 GB</li>
+    <li>Almacenamiento: 128/256/512 GB</li>
+    <li>Cámara: Triple 48 MP + 12 MP + 12 MP / 12 MP frontal</li>
+    <li>Batería: Hasta 23 horas de reproducción de video</li>
+    <li>Sistema: iOS 16</li>
+  </ul>
+  <a class="btn" href="https://www.apple.com/es/iphone-14-pro/" target="_blank">Comprar</a>
+
+  <h3>Samsung Galaxy S23 Ultra</h3>
+  <img src="https://www.samsung.com/es/smartphones/galaxy-s23-ultra/galaxy-s23-ultra-5g/img/01_gallery.jpg" alt="Samsung Galaxy S23 Ultra" class="phone-img">
+  <ul>
+    <li>Pantalla: 6.8" Dynamic AMOLED 2X QHD+</li>
+    <li>Procesador: Snapdragon 8 Gen 2</li>
+    <li>RAM: 12 GB</li>
+    <li>Almacenamiento: 256/512 GB / 1 TB</li>
+    <li>Cámara: Cuádruple 200 MP + 12 MP + 10 MP + 10 MP / 12 MP frontal</li>
+    <li>Batería: 5000 mAh</li>
+    <li>Sistema: Android 13</li>
+  </ul>
+  <a class="btn" href="https://www.samsung.com/es/smartphones/galaxy-s23-ultra/" target="_blank">Comprar</a>
+
+  <h3>Tabla Comparativa - Gama Alta</h3>
+  <table>
+    <tr>
+      <th>Modelo</th>
+      <th>Pantalla</th>
+      <th>Procesador</th>
+      <th>RAM</th>
+      <th>Almacenamiento</th>
+      <th>Cámara</th>
+      <th>Batería</th>
+    </tr>
+    <tr>
+      <td>Apple iPhone 14 Pro</td>
+      <td>6.1" Super Retina XDR OLED</td>
+      <td>A16 Bionic</td>
+      <td>6 GB</td>
+      <td>128/256/512 GB</td>
+      <td>48+12+12 MP / 12 MP</td>
+      <td>Hasta 23 horas de video</td>
+    </tr>
+    <tr>
+      <td>Samsung Galaxy S23 Ultra</td>
+      <td>6.8" Dynamic AMOLED 2X QHD+</td>
+      <td>Snapdragon 8 Gen 2</td>
+      <td>12 GB</td>
+      <td>256/512 GB / 1 TB</td>
+      <td>200+12+10+10 MP / 12 MP</td>
+      <td>5000 mAh</td>
+    </tr>
+  </table>
+</section>
