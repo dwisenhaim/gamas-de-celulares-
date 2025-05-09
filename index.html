@@ -3,19 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gamas de Celulares</title>
+  <title>Valhalla Mobile - Gamas de Celulares</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
     }
     header {
       background-color: #1e90ff;
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 30px 20px;
+    }
+    nav {
+      background-color: #0b74c1;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      position: relative;
+    }
+    nav a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+    }
+    nav li:hover ul {
+      display: block;
+    }
+    nav ul ul {
+      display: none;
+      position: absolute;
+      background-color: #0b74c1;
+      top: 100%;
+      left: 0;
+      min-width: 180px;
+      z-index: 1000;
+    }
+    nav ul ul li {
+      width: 100%;
     }
     main {
       max-width: 1000px;
@@ -54,41 +89,58 @@
       background-color: #1e90ff;
       color: white;
     }
-    ul {
-      padding-left: 20px;
-    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Gamas de Celulares</h1>
-    <p>Descubre las diferencias entre la gama baja, media y alta</p>
+    <h1>Valhalla Mobile</h1>
+    <p>Explora las gamas de celulares que se adaptan a tus necesidades</p>
   </header>
 
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Gamas</a>
+        <ul>
+          <li><a href="#gama-baja">Gama Baja</a></li>
+          <li><a href="#gama-media">Gama Media</a></li>
+          <li><a href="#gama-alta">Gama Alta</a></li>
+        </ul>
+      </li>
+      <li><a href="#comparativa">Comparativa</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <section>
+    <section id="gama-baja">
       <h2>Gama Baja</h2>
       <img src="https://raw.githubusercontent.com/dwisenhaim/gamas-de-celulares-/main/descarga.jpeg" alt="Celular Gama Baja">
-      <p>Los celulares de gama baja están diseñados para tareas básicas como llamadas, mensajería, redes sociales y navegación web ligera. Son ideales para usuarios con presupuesto limitado o que no requieren alto rendimiento.</p>
+      <p>Diseñados para tareas básicas: llamadas, redes sociales, mensajería y navegación web sencilla. Perfectos para quienes solo necesitan lo esencial.</p>
+      <img src="https://cdn.pixabay.com/photo/2016/08/01/20/02/smartphone-1562750_1280.jpg" alt="Celular sencillo">
+      <p><strong>Ventajas:</strong> precio accesible, buena duración de batería, interfaz simple.</p>
     </section>
 
-    <section>
+    <section id="gama-media">
       <h2>Gama Media</h2>
       <img src="https://raw.githubusercontent.com/dwisenhaim/gamas-de-celulares-/main/descarga%20(1).jpeg" alt="Celular Gama Media">
-      <p>La gama media ofrece un equilibrio entre precio y rendimiento. Estos teléfonos suelen tener mejores cámaras, procesadores más rápidos y pantallas de mayor calidad. Son una excelente opción para la mayoría de los usuarios.</p>
+      <p>Balance ideal entre rendimiento y costo. Incluye cámaras decentes, procesadores rápidos y pantallas de buena calidad. Ideal para multitarea y entretenimiento.</p>
+      <img src="https://cdn.pixabay.com/photo/2018/07/27/14/39/phone-3564260_1280.jpg" alt="Celular moderno gama media">
+      <p><strong>Ventajas:</strong> buena cámara, rendimiento estable, características modernas como lector de huella o carga rápida.</p>
     </section>
 
-    <section>
+    <section id="gama-alta">
       <h2>Gama Alta</h2>
-      <img src="https://github.com/dwisenhaim/gamas-de-celulares-/blob/39b8f2c00b6b05a30fbefbb07b5799cd5b5bc45a/08d0dffc0c34474de7d461c5589d5114.jpg" alt="Celular Gama Alta">
-      <p>Los celulares de gama alta son los más avanzados del mercado. Incorporan las últimas tecnologías, potentes procesadores, pantallas de alta resolución, múltiples cámaras de calidad profesional y funciones premium.</p>
+      <img src="https://raw.githubusercontent.com/dwisenhaim/gamas-de-celulares-/main/descarga%20(2).jpeg" alt="Celular Gama Alta">
+      <p>Los más potentes del mercado. Cuentan con lo último en tecnología: cámaras múltiples con inteligencia artificial, pantallas OLED, diseños premium y gran capacidad de procesamiento.</p>
+      <img src="https://cdn.pixabay.com/photo/2020/08/25/01/15/iphone-5516886_1280.jpg" alt="Celular gama alta">
+      <p><strong>Ventajas:</strong> calidad profesional en fotos y video, ideal para gaming, actualizaciones garantizadas.</p>
     </section>
 
-    <section>
+    <section id="comparativa">
       <h2>Tabla Comparativa</h2>
       <table>
         <tr>
-          <th>vergil</th>
+          <th>Característica</th>
           <th>Gama Baja</th>
           <th>Gama Media</th>
           <th>Gama Alta</th>
