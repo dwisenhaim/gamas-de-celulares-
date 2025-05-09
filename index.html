@@ -15,6 +15,11 @@
       padding: 1rem;
       text-align: center;
     }
+    header img {
+      width: 80px;
+      display: block;
+      margin: 0 auto 10px;
+    }
     nav {
       background-color: #333;
       overflow: hidden;
@@ -83,113 +88,153 @@
     h2 {
       margin-top: 0;
     }
+    .ficha {
+      background-color: white;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    @media screen and (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+      }
+      td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+      }
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        text-align: left;
+        font-weight: bold;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="/mnt/data/file-73vzgbRYjbtkWC5iHJWpM8" alt="Logo Valhalla">
     <h1>Valhalla Móvil</h1>
     <p>Explora las mejores opciones de celulares en todas las gamas</p>
-  </header>  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-btn">Gamas</a>
-        <div class="dropdown-content">
-          <a href="#baja">Gama Baja</a>
-          <a href="#media">Gama Media</a>
-          <a href="#alta">Gama Alta</a>
-        </div>
-      </li>
-    </ul>
-  </nav>  <section id="inicio">
-    <h2>Bienvenido a Valhalla Móvil</h2>
-    <p>Descubre una selección cuidadosamente curada de teléfonos móviles divididos en tres categorías principales: baja, media y alta gama. Compara características, mira imágenes, y accede a enlaces de compra directa.</p>
-  </section>  <section id="baja" class="baja">
+  </header>  <section class="baja">
     <h2>Gama Baja</h2>
-    <p>Ideales para quienes buscan funcionalidad básica y bajo costo.</p>
-    <table>
-      <tr>
-        <th>Modelo</th>
-        <th>Imagen</th>
-        <th>Características</th>
-        <th>Enlace de compra</th>
-      </tr>
-      <tr>
-        <td>Samsung Galaxy A03</td>
-        <td><img src="https://example.com/a03.jpg" alt="Galaxy A03"></td>
-        <td>Pantalla 6.5", 3GB RAM, 32GB, 5000mAh</td>
-        <td><a href="https://compra.com/a03">Comprar</a></td>
-      </tr>
-      <tr>
-        <td>Redmi A2</td>
-        <td><img src="https://example.com/a2.jpg" alt="Redmi A2"></td>
-        <td>Pantalla 6.52", Helio G36, 2GB RAM, 32GB</td>
-        <td><a href="https://compra.com/a2">Comprar</a></td>
-      </tr>
-      <tr>
-        <td>Realme C30</td>
-        <td><img src="https://example.com/c30.jpg" alt="Realme C30"></td>
-        <td>Pantalla 6.5", Unisoc T612, 3GB RAM</td>
-        <td><a href="https://compra.com/c30">Comprar</a></td>
-      </tr>
-    </table>
-  </section>  <section id="media" class="media">
+    <div class="ficha">
+      <h3>Xiaomi Redmi A2</h3>
+      <ul>
+        <li>Pantalla: 6.52" HD+</li>
+        <li>Procesador: MediaTek Helio G36</li>
+        <li>RAM: 2 GB</li>
+        <li>Almacenamiento: 32 GB</li>
+        <li>Batería: 5000 mAh</li>
+        <li>Cámara: 8 MP trasera, 5 MP frontal</li>
+        <li>SO: Android 12 Go Edition</li>
+      </ul>
+    </div>
+    <div class="ficha">
+      <h3>Samsung Galaxy A04e</h3>
+      <ul>
+        <li>Pantalla: 6.5" HD+</li>
+        <li>Procesador: Helio P35</li>
+        <li>RAM: 3 GB</li>
+        <li>Almacenamiento: 32/64 GB</li>
+        <li>Batería: 5000 mAh</li>
+        <li>Cámara: 13 MP trasera, 5 MP frontal</li>
+        <li>SO: Android 12</li>
+      </ul>
+    </div>
+    <div class="ficha">
+      <h3>Motorola Moto E13</h3>
+      <ul>
+        <li>Pantalla: 6.5" HD+</li>
+        <li>Procesador: Unisoc T606</li>
+        <li>RAM: 2/4 GB</li>
+        <li>Almacenamiento: 64 GB</li>
+        <li>Batería: 5000 mAh</li>
+        <li>Cámara: 13 MP trasera, 5 MP frontal</li>
+        <li>SO: Android 13 Go</li>
+      </ul>
+    </div>
+  </section>  <section class="media">
     <h2>Gama Media</h2>
-    <p>Para quienes buscan equilibrio entre precio y rendimiento.</p>
-    <table>
-      <tr>
-        <th>Modelo</th>
-        <th>Imagen</th>
-        <th>Características</th>
-        <th>Enlace de compra</th>
-      </tr>
-      <tr>
-        <td>Samsung Galaxy A54</td>
-        <td><img src="https://example.com/a54.jpg" alt="Galaxy A54"></td>
-        <td>Pantalla Super AMOLED, 6GB RAM, Exynos 1380</td>
-        <td><a href="https://compra.com/a54">Comprar</a></td>
-      </tr>
-      <tr>
-        <td>Redmi Note 13</td>
-        <td><img src="https://example.com/note13.jpg" alt="Redmi Note 13"></td>
-        <td>Snapdragon 685, 8GB RAM, 128GB</td>
-        <td><a href="https://compra.com/note13">Comprar</a></td>
-      </tr>
-      <tr>
-        <td>Motorola G73</td>
-        <td><img src="https://example.com/g73.jpg" alt="Moto G73"></td>
-        <td>Dimensity 930, 8GB RAM, 5000mAh</td>
-        <td><a href="https://compra.com/g73">Comprar</a></td>
-      </tr>
-    </table>
-  </section>  <section id="alta" class="alta">
+    <div class="ficha">
+      <h3>Samsung Galaxy A54</h3>
+      <ul>
+        <li>Pantalla: 6.4" AMOLED FHD+ 120Hz</li>
+        <li>Procesador: Exynos 1380</li>
+        <li>RAM: 6/8 GB</li>
+        <li>Almacenamiento: 128/256 GB</li>
+        <li>Batería: 5000 mAh</li>
+        <li>Cámara: Triple 50+12+5 MP, 32 MP frontal</li>
+        <li>SO: Android 13</li>
+      </ul>
+    </div>
+    <div class="ficha">
+      <h3>Motorola Edge 40</h3>
+      <ul>
+        <li>Pantalla: 6.55" P-OLED 144Hz</li>
+        <li>Procesador: Dimensity 8020</li>
+        <li>RAM: 8 GB</li>
+        <li>Almacenamiento: 256 GB</li>
+        <li>Batería: 4400 mAh</li>
+        <li>Cámara: Dual 50+13 MP, 32 MP frontal</li>
+        <li>SO: Android 13</li>
+      </ul>
+    </div>
+    <div class="ficha">
+      <h3>POCO X5 Pro</h3>
+      <ul>
+        <li>Pantalla: 6.67" AMOLED FHD+ 120Hz</li>
+        <li>Procesador: Snapdragon 778G</li>
+        <li>RAM: 6/8 GB</li>
+        <li>Almacenamiento: 128/256 GB</li>
+        <li>Batería: 5000 mAh</li>
+        <li>Cámara: Triple 108+8+2 MP, 16 MP frontal</li>
+        <li>SO: MIUI 14 (Android 12)</li>
+      </ul>
+    </div>
+  </section>  <section class="alta">
     <h2>Gama Alta</h2>
-    <p>Rendimiento premium, cámaras avanzadas y diseño de lujo.</p>
-    <table>
-      <tr>
-        <th>Modelo</th>
-        <th>Imagen</th>
-        <th>Características</th>
-        <th>Enlace de compra</th>
-      </tr>
-      <tr>
-        <td>iPhone 15 Pro</td>
-        <td><img src="https://example.com/iphone15pro.jpg" alt="iPhone 15 Pro"></td>
-        <td>Chip A17 Pro, pantalla OLED, cámara ProRAW</td>
-        <td><a href="https://compra.com/iphone15pro">Comprar</a></td>
-      </tr>
-      <tr>
-        <td>Samsung Galaxy S24 Ultra</td>
-        <td><img src="https://example.com/s24ultra.jpg" alt="S24 Ultra"></td>
-        <td>Snapdragon 8 Gen 3, S-Pen, 200MP</td>
-        <td><a href="https://compra.com/s24ultra">Comprar</a></td>
-      </tr>
-      <tr>
-        <td>OnePlus 12</td>
-        <td><img src="https://example.com/op12.jpg" alt="OnePlus 12"></td>
-        <td>Snapdragon 8 Gen 3, 100W carga, 16GB RAM</td>
-        <td><a href="https://compra.com/op12">Comprar</a></td>
-      </tr>
-    </table>
-  </section></body>
+    <div class="ficha">
+      <h3>Samsung Galaxy S24 Ultra</h3>
+      <ul>
+        <li>Pantalla: 6.8" QHD+ AMOLED 120Hz</li>
+        <li>Procesador: Snapdragon 8 Gen 3</li>
+        <li>RAM: 12 GB</li>
+        <li>Almacenamiento: 256/512 GB o 1 TB</li>
+        <li>Batería: 5000 mAh</li>
+        <li>Cámara: Cuádruple 200+12+10+10 MP, 12 MP frontal</li>
+        <li>SO: Android 14</li>
+      </ul>
+    </div>
+    <div class="ficha">
+      <h3>iPhone 15 Pro Max</h3>
+      <ul>
+        <li>Pantalla: 6.7" Super Retina XDR OLED</li>
+        <li>Procesador: A17 Pro</li>
+        <li>RAM: 8 GB</li>
+        <li>Almacenamiento: 256 GB / 512 GB / 1 TB</li>
+        <li>Batería: Aprox. 4422 mAh</li>
+        <li>Cámara: Triple 48+12+12 MP</li>
+        <li>SO: iOS 17</li>
+      </ul>
+    </div>
+    <div class="ficha">
+      <h3>OnePlus 12</h3>
+      <ul>
+        <li>Pantalla: 6.82" AMOLED 120Hz</li>
+        <li>Procesador: Snapdragon 8 Gen 3</li>
+        <li>RAM: 12/16 GB</li>
+        <li>Almacenamiento: 256/512 GB</li>
+        <li>Batería: 5400 mAh</li>
+        <li>Cámara: Triple 50+48+64 MP, 32 MP frontal</li>
+        <li>SO: Android 14</li>
+      </ul>
+    </div>
+  </section>
+</body>
 </html>
