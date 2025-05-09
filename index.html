@@ -1,241 +1,195 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Valhalla Mobile - Gamas de Celulares</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valhalla Móvil</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f7fc;
     }
     header {
-      background: linear-gradient(90deg, #1e90ff, #0b74c1);
+      background-color: #1a1a1a;
       color: white;
-      padding: 40px 20px;
+      padding: 1rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
     nav {
-      background-color: #0b74c1;
-      display: flex;
-      justify-content: center;
+      background-color: #333;
+      overflow: hidden;
     }
     nav ul {
-      list-style: none;
+      list-style-type: none;
       margin: 0;
       padding: 0;
-      display: flex;
     }
     nav li {
-      position: relative;
+      float: left;
     }
-    nav a {
-      display: block;
-      padding: 18px 30px;
+    nav li a, .dropdown-btn {
+      display: inline-block;
       color: white;
+      text-align: center;
+      padding: 14px 16px;
       text-decoration: none;
     }
-    nav a:hover {
-      background-color: #1e90ff;
+    nav li a:hover, .dropdown:hover .dropdown-btn {
+      background-color: #111;
     }
-    nav ul ul {
+    .dropdown {
+      display: inline-block;
+    }
+    .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #0b74c1;
-      top: 100%;
-      left: 0;
-      min-width: 200px;
-      z-index: 1000;
+      background-color: #444;
+      min-width: 160px;
+      z-index: 1;
     }
-    nav li:hover ul {
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
       display: block;
     }
-    main {
-      max-width: 1200px;
-      margin: auto;
-      padding: 30px 20px;
+    .dropdown-content a:hover {
+      background-color: #666;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
     section {
-      background-color: white;
-      padding: 30px;
-      margin-bottom: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
     }
-    section h2 {
-      color: #1e90ff;
-      border-bottom: 2px solid #1e90ff;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-    section h3 {
-      color: #0b74c1;
-    }
-    img.phone-img {
-      width: 100%;
-      max-width: 300px;
-      margin: 15px auto;
-      display: block;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 5px;
-    }
+    .baja { background-color: #f2f2f2; }
+    .media { background-color: #e0f7fa; }
+    .alta { background-color: #ede7f6; }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 30px;
-      font-size: 14px;
+      margin-top: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #999;
     }
     th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
+      padding: 10px;
       text-align: center;
     }
-    th {
-      background-color: #1e90ff;
-      color: white;
+    img {
+      max-width: 150px;
     }
-    a.btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 20px;
-      background-color: #1e90ff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-    a.btn:hover {
-      background-color: #0b74c1;
+    h2 {
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Valhalla Mobile</h1>
-    <p>Explora las gamas de celulares que se adaptan a tus necesidades</p>
-  </header>
-
-  <nav>
+    <h1>Valhalla Móvil</h1>
+    <p>Explora las mejores opciones de celulares en todas las gamas</p>
+  </header>  <nav>
     <ul>
-      <li><a href="#gama-baja">Gama Baja</a></li>
-      <li><a href="#gama-media">Gama Media</a></li>
-      <li><a href="#gama-alta">Gama Alta</a></li>
+      <li><a href="#inicio">Inicio</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-btn">Gamas</a>
+        <div class="dropdown-content">
+          <a href="#baja">Gama Baja</a>
+          <a href="#media">Gama Media</a>
+          <a href="#alta">Gama Alta</a>
+        </div>
+      </li>
     </ul>
-  </nav>
-
-  <main>
-    <!-- Gama Baja -->
-    <section id="gama-baja">
-      <h2>Gama Baja</h2>
-
-      <h3>Samsung Galaxy A03s</h3>
-      <img src="https://www.samsung.com/us/mobile/phones/galaxy-a/galaxy-a03s-unlocked-sm-a037uzkdxaa/" alt="Samsung Galaxy A03s" class="phone-img">
-      <ul>
-        <li>Pantalla: 6.5" PLS TFT</li>
-        <li>Procesador: MediaTek Helio P35</li>
-        <li>RAM: 3/4 GB</li>
-        <li>Almacenamiento: 32/64 GB</li>
-        <li>Cámara: Triple 13 MP + 2 MP + 2 MP / 5 MP frontal</li>
-        <li>Batería: 5000 mAh</li>
-        <li>Sistema: Android 11</li>
-      </ul>
-      <a class="btn" href="https://www.samsung.com/us/mobile/phones/galaxy-a/galaxy-a03s-unlocked-sm-a037uzkdxaa/" target="_blank">Comprar</a>
-
-      <h3>Xiaomi Redmi 9A</h3>
-      <img src="https://www.smart-gsm.com/moviles/xiaomi-redmi-9a" alt="Xiaomi Redmi 9A" class="phone-img">
-      <ul>
-        <li>Pantalla: 6.53" IPS LCD</li>
-        <li>Procesador: MediaTek Helio G25</li>
-        <li>RAM: 2/3 GB</li>
-        <li>Almacenamiento: 32 GB</li>
-        <li>Cámara: 13 MP / 5 MP frontal</li>
-        <li>Batería: 5000 mAh</li>
-        <li>Sistema: Android 10</li>
-      </ul>
-      <a class="btn" href="https://www.smart-gsm.com/moviles/xiaomi-redmi-9a" target="_blank">Comprar</a>
-
-      <h3>Tabla Comparativa - Gama Baja</h3>
-      <table>
-        <tr>
-          <th>Modelo</th>
-          <th>Pantalla</th>
-          <th>Procesador</th>
-          <th>RAM</th>
-          <th>Almacenamiento</th>
-          <th>Cámara</th>
-          <th>Batería</th>
-        </tr>
-        <tr>
-          <td>Samsung Galaxy A03s</td>
-          <td>6.5" PLS TFT</td>
-          <td>MediaTek Helio P35</td>
-          <td>3/4 GB</td>
-          <td>32/64 GB</td>
-          <td>13+2+2 MP / 5 MP</td>
-          <td>5000 mAh</td>
-        </tr>
-        <tr>
-          <td>Xiaomi Redmi 9A</td>
-          <td>6.53" IPS LCD</td>
-          <td>MediaTek Helio G25</td>
-          <td>2/3 GB</td>
-          <td>32 GB</td>
-          <td>13 MP / 5 MP</td>
-          <td>5000 mAh</td>
-        </tr>
-      </table>
-    </section>
-
-    <!-- Gama Media -->
-    <section id="gama-media">
-      <h2>Gama Media</h2>
-
-      <h3>Samsung Galaxy A14</h3>
-      <img src="https://www.samsung.com/es/smartphones/galaxy-a/galaxy-a14-5g-sm-a145fzkceub/" alt="Samsung Galaxy A14" class="phone-img">
-      <ul>
-        <li>Pantalla: 6.6" FHD+</li>
-        <li>Procesador: Exynos 1330</li>
-        <li>RAM: 4/6 GB</li>
-        <li>Almacenamiento: 64/128 GB</li>
-        <li>Cámara: Triple 50 MP + 2 MP + 2 MP / 13 MP frontal</li>
-        <li>Batería: 5000 mAh</li>
-        <li>Sistema: Android 13</li>
-      </ul>
-      <a class="btn" href="https://www.samsung.com/es/smartphones/galaxy-a/galaxy-a14-5g-sm-a145fzkceub/" target="_blank">Comprar</a>
-
-      <h3>Xiaomi Redmi Note 12</h3>
-      <img src="https://www.mi.com/es/redmi-note-12" alt="Xiaomi Redmi Note 12" class="phone-img">
-      <ul>
-        <li>Pantalla: 6.67" AMOLED FHD+</li>
-        <li>Procesador: Snapdragon 4 Gen 1</li>
-        <li>RAM: 4/6 GB</li>
-        <li>Almacenamiento: 128 GB</li>
-        <li>Cámara: 50 MP + 8 MP + 2 MP / 13 MP frontal</li>
-        <li>Batería: 5000 mAh</li>
-        <li>Sistema: Android 13</li>
-      </ul>
-      <a class="btn" href="https://www.mi.com/es/redmi-note-12" target="_blank">Comprar</a>
-
-      <h3>Tabla Comparativa - Gama Media</h3>
-      <table>
-        <tr>
-          <th>Modelo</th>
-          <th>Pantalla</th>
-          <th>Procesador</th>
-          <th>RAM</th>
-          <th>Almacenamiento</th>
-          <th>Cámara</th>
-          <th>Batería1
+  </nav>  <section id="inicio">
+    <h2>Bienvenido a Valhalla Móvil</h2>
+    <p>Descubre una selección cuidadosamente curada de teléfonos móviles divididos en tres categorías principales: baja, media y alta gama. Compara características, mira imágenes, y accede a enlaces de compra directa.</p>
+  </section>  <section id="baja" class="baja">
+    <h2>Gama Baja</h2>
+    <p>Ideales para quienes buscan funcionalidad básica y bajo costo.</p>
+    <table>
+      <tr>
+        <th>Modelo</th>
+        <th>Imagen</th>
+        <th>Características</th>
+        <th>Enlace de compra</th>
+      </tr>
+      <tr>
+        <td>Samsung Galaxy A03</td>
+        <td><img src="https://example.com/a03.jpg" alt="Galaxy A03"></td>
+        <td>Pantalla 6.5", 3GB RAM, 32GB, 5000mAh</td>
+        <td><a href="https://compra.com/a03">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>Redmi A2</td>
+        <td><img src="https://example.com/a2.jpg" alt="Redmi A2"></td>
+        <td>Pantalla 6.52", Helio G36, 2GB RAM, 32GB</td>
+        <td><a href="https://compra.com/a2">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>Realme C30</td>
+        <td><img src="https://example.com/c30.jpg" alt="Realme C30"></td>
+        <td>Pantalla 6.5", Unisoc T612, 3GB RAM</td>
+        <td><a href="https://compra.com/c30">Comprar</a></td>
+      </tr>
+    </table>
+  </section>  <section id="media" class="media">
+    <h2>Gama Media</h2>
+    <p>Para quienes buscan equilibrio entre precio y rendimiento.</p>
+    <table>
+      <tr>
+        <th>Modelo</th>
+        <th>Imagen</th>
+        <th>Características</th>
+        <th>Enlace de compra</th>
+      </tr>
+      <tr>
+        <td>Samsung Galaxy A54</td>
+        <td><img src="https://example.com/a54.jpg" alt="Galaxy A54"></td>
+        <td>Pantalla Super AMOLED, 6GB RAM, Exynos 1380</td>
+        <td><a href="https://compra.com/a54">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>Redmi Note 13</td>
+        <td><img src="https://example.com/note13.jpg" alt="Redmi Note 13"></td>
+        <td>Snapdragon 685, 8GB RAM, 128GB</td>
+        <td><a href="https://compra.com/note13">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>Motorola G73</td>
+        <td><img src="https://example.com/g73.jpg" alt="Moto G73"></td>
+        <td>Dimensity 930, 8GB RAM, 5000mAh</td>
+        <td><a href="https://compra.com/g73">Comprar</a></td>
+      </tr>
+    </table>
+  </section>  <section id="alta" class="alta">
+    <h2>Gama Alta</h2>
+    <p>Rendimiento premium, cámaras avanzadas y diseño de lujo.</p>
+    <table>
+      <tr>
+        <th>Modelo</th>
+        <th>Imagen</th>
+        <th>Características</th>
+        <th>Enlace de compra</th>
+      </tr>
+      <tr>
+        <td>iPhone 15 Pro</td>
+        <td><img src="https://example.com/iphone15pro.jpg" alt="iPhone 15 Pro"></td>
+        <td>Chip A17 Pro, pantalla OLED, cámara ProRAW</td>
+        <td><a href="https://compra.com/iphone15pro">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>Samsung Galaxy S24 Ultra</td>
+        <td><img src="https://example.com/s24ultra.jpg" alt="S24 Ultra"></td>
+        <td>Snapdragon 8 Gen 3, S-Pen, 200MP</td>
+        <td><a href="https://compra.com/s24ultra">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>OnePlus 12</td>
+        <td><img src="https://example.com/op12.jpg" alt="OnePlus 12"></td>
+        <td>Snapdragon 8 Gen 3, 100W carga, 16GB RAM</td>
+        <td><a href="https://compra.com/op12">Comprar</a></td>
+      </tr>
+    </table>
+  </section></body>
+</html>
