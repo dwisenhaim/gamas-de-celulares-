@@ -106,6 +106,27 @@
       background-color: #1e90ff;
       color: white;
     }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea, button {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0b74c1;
+    }
   </style>
 </head>
 <body>
@@ -122,85 +143,64 @@
           <li><a href="#gama-alta">Gama Alta</a></li>
         </ul>
       </li>
+      <li><a href="#comparativa">Comparativa</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>  <main>
-    <section id="gama-baja">
-      <h2>Gama Baja</h2>
-      <p>Los celulares de gama baja están enfocados en tareas básicas. Ideales para quienes buscan funcionalidad sin gastar demasiado.</p>
-      <h3>Xiaomi Redmi A3</h3>
-      <img src="https://i.blogs.es/a12323/xiaomi-redmi-a3/1366_2000.jpeg" alt="Xiaomi Redmi A3">
-      <ul>
-        <li>Pantalla: 6.71" HD+ LCD</li>
-        <li>Procesador: MediaTek Helio G36</li>
-        <li>RAM: 3GB</li>
-        <li>Almacenamiento: 64GB</li>
-        <li>Cámara trasera: 8 MP</li>
-        <li>Batería: 5000 mAh</li>
-        <li><a href="https://www.mi.com" class="buy-button" target="_blank">Comprar</a></li>
-      </ul>
-      <h3>Samsung Galaxy A04</h3>
-      <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a045mzkearo/gallery/ar-galaxy-a04-sm-a045-sm-a045mzkearo-534708687" alt="Samsung Galaxy A04">
-      <ul>
-        <li>Pantalla: 6.5" PLS LCD</li>
-        <li>Procesador: Helio P35</li>
-        <li>RAM: 4GB</li>
-        <li>Almacenamiento: 64GB</li>
-        <li>Cámara trasera: Dual 50 MP + 2 MP</li>
-        <li>Batería: 5000 mAh</li>
-        <li><a href="https://www.samsung.com" class="buy-button" target="_blank">Comprar</a></li>
-      </ul>
-    </section><section id="gama-media">
-  <h2>Gama Media</h2>
-  <p>Gran rendimiento, ideal para fotografía casual, redes sociales y apps exigentes.</p>
-  <h3>Motorola G73 5G</h3>
-  <img src="https://motorolaes.vtexassets.com/arquivos/ids/161206-800-auto?v=638312702438300000&width=800&height=auto&aspect=true" alt="Motorola G73">
-  <ul>
-    <li>Pantalla: 6.5" Full HD+ 120Hz</li>
-    <li>Procesador: Dimensity 930</li>
-    <li>RAM: 8GB</li>
-    <li>Almacenamiento: 128GB</li>
-    <li>Cámara trasera: Dual 50 MP + 8 MP ultra gran angular</li>
-    <li>Batería: 5000 mAh, carga rápida 30W</li>
-    <li><a href="https://www.motorola.com" class="buy-button" target="_blank">Comprar</a></li>
-  </ul>
-  <h3>Samsung Galaxy A34</h3>
-  <img src="https://images.samsung.com/is/image/samsung/p6pim/latin/2303/gallery/latin-galaxy-a34-5g-sm-a346-sm-a346mzwdgto-534928699" alt="Samsung Galaxy A34">
-  <ul>
-    <li>Pantalla: 6.6" Super AMOLED 120Hz</li>
-    <li>Procesador: Dimensity 1080</li>
-    <li>RAM: 6GB</li>
-    <li>Almacenamiento: 128GB</li>
-    <li>Cámara trasera: Triple 48 MP + 8 MP + 5 MP</li>
-    <li>Batería: 5000 mAh, carga rápida 25W</li>
-    <li><a href="https://www.samsung.com" class="buy-button" target="_blank">Comprar</a></li>
-  </ul>
+    <!-- Secciones anteriores aquí (gama baja, media, alta) --><section id="comparativa">
+  <h2>Tabla Comparativa Detallada</h2>
+  <table>
+    <tr>
+      <th>Modelo</th>
+      <th>Gama</th>
+      <th>Pantalla</th>
+      <th>Procesador</th>
+      <th>RAM</th>
+      <th>Almacenamiento</th>
+      <th>Cámara</th>
+      <th>Batería</th>
+    </tr>
+    <tr>
+      <td>Xiaomi Redmi A3</td>
+      <td>Baja</td>
+      <td>6.71" HD+ LCD</td>
+      <td>Helio G36</td>
+      <td>3GB</td>
+      <td>64GB</td>
+      <td>8 MP</td>
+      <td>5000 mAh</td>
+    </tr>
+    <tr>
+      <td>Motorola G73 5G</td>
+      <td>Media</td>
+      <td>6.5" FHD+ 120Hz</td>
+      <td>Dimensity 930</td>
+      <td>8GB</td>
+      <td>128GB</td>
+      <td>50 MP + 8 MP</td>
+      <td>5000 mAh</td>
+    </tr>
+    <tr>
+      <td>Samsung Galaxy S24 Ultra</td>
+      <td>Alta</td>
+      <td>6.8" QHD+ AMOLED</td>
+      <td>Snapdragon 8 Gen 3</td>
+      <td>12GB</td>
+      <td>512GB</td>
+      <td>200 MP + 3</td>
+      <td>5000 mAh</td>
+    </tr>
+  </table>
 </section>
 
-<section id="gama-alta">
-  <h2>Gama Alta</h2>
-  <p>Para quienes exigen lo mejor: cámaras profesionales, pantallas de altísima calidad y potencia de sobra.</p>
-  <h3>Samsung Galaxy S24 Ultra</h3>
-  <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/2401/gallery/ar-galaxy-s24-ultra-s928-sm-s928bztlaro-539654743" alt="Samsung Galaxy S24 Ultra">
-  <ul>
-    <li>Pantalla: 6.8" QHD+ AMOLED 120Hz</li>
-    <li>Procesador: Snapdragon 8 Gen 3</li>
-    <li>RAM: 12GB</li>
-    <li>Almacenamiento: 256GB/512GB/1TB</li>
-    <li>Cámara trasera: Cuádruple 200 MP + 50 MP + 12 MP + 10 MP</li>
-    <li>Batería: 5000 mAh, carga rápida e inalámbrica</li>
-    <li><a href="https://www.samsung.com" class="buy-button" target="_blank">Comprar</a></li>
-  </ul>
-  <h3>iPhone 15 Pro Max</h3>
-  <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309?wid=5120&hei=2880&fmt=jpeg&qlt=90&.v=1692923769629" alt="iPhone 15 Pro Max">
-  <ul>
-    <li>Pantalla: 6.7" OLED Super Retina XDR</li>
-    <li>Procesador: Apple A17 Pro</li>
-    <li>RAM: 8GB</li>
-    <li>Almacenamiento: 256GB/512GB/1TB</li>
-    <li>Cámara trasera: Triple 48 MP + 12 MP + 12 MP teleobjetivo</li>
-    <li>Batería: hasta 29 horas de video, carga MagSafe</li>
-    <li><a href="https://www.apple.com" class="buy-button" target="_blank">Comprar</a></li>
-  </ul>
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <form>
+    <input type="text" name="nombre" placeholder="Nombre completo" required>
+    <input type="email" name="email" placeholder="Correo electrónico" required>
+    <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    <button type="submit">Enviar Mensaje</button>
+  </form>
 </section>
 
   </main>
