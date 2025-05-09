@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Valhalla Mobile - Gamas de Celulares</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      color: #333;
       background-color: #f4f7fc;
     }
     header {
@@ -26,7 +25,6 @@
       background-color: #0b74c1;
       display: flex;
       justify-content: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     nav ul {
       list-style: none;
@@ -46,9 +44,6 @@
     nav a:hover {
       background-color: #1e90ff;
     }
-    nav li:hover ul {
-      display: block;
-    }
     nav ul ul {
       display: none;
       position: absolute;
@@ -58,8 +53,8 @@
       min-width: 200px;
       z-index: 1000;
     }
-    nav ul ul li {
-      width: 100%;
+    nav li:hover ul {
+      display: block;
     }
     main {
       max-width: 1200px;
@@ -84,11 +79,18 @@
     }
     img.phone-img {
       width: 100%;
-      max-width: 500px;
+      max-width: 300px;
       margin: 15px auto;
       display: block;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 5px;
     }
     table {
       width: 100%;
@@ -118,9 +120,6 @@
     a.btn:hover {
       background-color: #0b74c1;
     }
-    section#comparativa {
-      background-color: #f4f7fc;
-    }
   </style>
 </head>
 <body>
@@ -131,15 +130,9 @@
 
   <nav>
     <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Gamas</a>
-        <ul>
-          <li><a href="#gama-baja">Gama Baja</a></li>
-          <li><a href="#gama-media">Gama Media</a></li>
-          <li><a href="#gama-alta">Gama Alta</a></li>
-        </ul>
-      </li>
-      <li><a href="#comparativa">Comparativa</a></li>
+      <li><a href="#gama-baja">Gama Baja</a></li>
+      <li><a href="#gama-media">Gama Media</a></li>
+      <li><a href="#gama-alta">Gama Alta</a></li>
     </ul>
   </nav>
 
@@ -147,8 +140,9 @@
     <!-- Gama Baja -->
     <section id="gama-baja">
       <h2>Gama Baja</h2>
+
       <h3>Samsung Galaxy A03s</h3>
-      <img src="https://www.samsung.com/es/smartphones/galaxy-a/galaxy-a03s/images/01_Galaxy_A03s_Hero_M.jpg" alt="Samsung Galaxy A03s" class="phone-img">
+      <img src="https://www.samsung.com/us/mobile/phones/galaxy-a/galaxy-a03s-unlocked-sm-a037uzkdxaa/" alt="Samsung Galaxy A03s" class="phone-img">
       <ul>
         <li>Pantalla: 6.5" PLS TFT</li>
         <li>Procesador: MediaTek Helio P35</li>
@@ -156,12 +150,12 @@
         <li>Almacenamiento: 32/64 GB</li>
         <li>Cámara: Triple 13 MP + 2 MP + 2 MP / 5 MP frontal</li>
         <li>Batería: 5000 mAh</li>
-        <li>Sistema: One UI 3.1 (Android 11)</li>
+        <li>Sistema: Android 11</li>
       </ul>
-      <a class="btn" href="https://www.samsung.com/es/smartphones/galaxy-a/galaxy-a03s/" target="_blank">Comprar</a>
+      <a class="btn" href="https://www.samsung.com/us/mobile/phones/galaxy-a/galaxy-a03s-unlocked-sm-a037uzkdxaa/" target="_blank">Comprar</a>
 
       <h3>Xiaomi Redmi 9A</h3>
-      <img src="https://static.mi.com/global/20201020/xiaomi-redmi-9a-1.jpg" alt="Xiaomi Redmi 9A" class="phone-img">
+      <img src="https://www.smart-gsm.com/moviles/xiaomi-redmi-9a" alt="Xiaomi Redmi 9A" class="phone-img">
       <ul>
         <li>Pantalla: 6.53" IPS LCD</li>
         <li>Procesador: MediaTek Helio G25</li>
@@ -169,16 +163,48 @@
         <li>Almacenamiento: 32 GB</li>
         <li>Cámara: 13 MP / 5 MP frontal</li>
         <li>Batería: 5000 mAh</li>
-        <li>Sistema: MIUI 12 (Android 10)</li>
+        <li>Sistema: Android 10</li>
       </ul>
-      <a class="btn" href="https://www.mi.com/es/redmi-9a" target="_blank">Comprar</a>
+      <a class="btn" href="https://www.smart-gsm.com/moviles/xiaomi-redmi-9a" target="_blank">Comprar</a>
+
+      <h3>Tabla Comparativa - Gama Baja</h3>
+      <table>
+        <tr>
+          <th>Modelo</th>
+          <th>Pantalla</th>
+          <th>Procesador</th>
+          <th>RAM</th>
+          <th>Almacenamiento</th>
+          <th>Cámara</th>
+          <th>Batería</th>
+        </tr>
+        <tr>
+          <td>Samsung Galaxy A03s</td>
+          <td>6.5" PLS TFT</td>
+          <td>MediaTek Helio P35</td>
+          <td>3/4 GB</td>
+          <td>32/64 GB</td>
+          <td>13+2+2 MP / 5 MP</td>
+          <td>5000 mAh</td>
+        </tr>
+        <tr>
+          <td>Xiaomi Redmi 9A</td>
+          <td>6.53" IPS LCD</td>
+          <td>MediaTek Helio G25</td>
+          <td>2/3 GB</td>
+          <td>32 GB</td>
+          <td>13 MP / 5 MP</td>
+          <td>5000 mAh</td>
+        </tr>
+      </table>
     </section>
 
     <!-- Gama Media -->
     <section id="gama-media">
       <h2>Gama Media</h2>
+
       <h3>Samsung Galaxy A14</h3>
-      <img src="https://images.samsung.com/is/image/samsung/p6pim/es/sm-a145fzkceub/gallery/es-galaxy-a14-5g-sm-a145-sm-a145fzkceub-532922381?$480_480_PNG$" alt="Samsung Galaxy A14" class="phone-img">
+      <img src="https://www.samsung.com/es/smartphones/galaxy-a/galaxy-a14-5g-sm-a145fzkceub/" alt="Samsung Galaxy A14" class="phone-img">
       <ul>
         <li>Pantalla: 6.6" FHD+</li>
         <li>Procesador: Exynos 1330</li>
@@ -191,7 +217,7 @@
       <a class="btn" href="https://www.samsung.com/es/smartphones/galaxy-a/galaxy-a14-5g-sm-a145fzkceub/" target="_blank">Comprar</a>
 
       <h3>Xiaomi Redmi Note 12</h3>
-      <img src="https://www.giztop.com/blog/wp-content/uploads/2023/03/Redmi-Note-12-4-128GB.jpg" alt="Xiaomi Redmi Note 12" class="phone-img">
+      <img src="https://www.mi.com/es/redmi-note-12" alt="Xiaomi Redmi Note 12" class="phone-img">
       <ul>
         <li>Pantalla: 6.67" AMOLED FHD+</li>
         <li>Procesador: Snapdragon 4 Gen 1</li>
@@ -199,23 +225,17 @@
         <li>Almacenamiento: 128 GB</li>
         <li>Cámara: 50 MP + 8 MP + 2 MP / 13 MP frontal</li>
         <li>Batería: 5000 mAh</li>
-        <li>Sistema: MIUI 14 (Android 13)</li>
+        <li>Sistema: Android 13</li>
       </ul>
       <a class="btn" href="https://www.mi.com/es/redmi-note-12" target="_blank">Comprar</a>
-    </section>
 
-    <!-- Gama Alta -->
-    <section id="gama-alta">
-      <h2>Gama Alta</h2>
-      <h3>Apple iPhone 14 Pro</h3>
-      <img src="https://www.apple.com/v/iphone-14/b/images/overview/hero/iphone_14_pro_hero__drt3doq9j8iy_large_2x.jpg" alt="Apple iPhone 14 Pro" class="phone-img">
-      <ul>
-        <li>Pantalla: 6.1" Super Retina XDR OLED</li>
-        <li>Procesador: A16 Bionic</li>
-        <li>RAM: 6 GB</li>
-        <li>Almacenamiento: 128/256/512 GB</li>
-        <li>Cámara: Triple 48 MP + 12 MP + 12 MP / 12 MP frontal</li>
-        <li>Batería: Hasta 23 horas de reproducción de video</li>
-        <li>Sistema: iOS 16</li>
-      </ul>
-      <a class="btn" href="https
+      <h3>Tabla Comparativa - Gama Media</h3>
+      <table>
+        <tr>
+          <th>Modelo</th>
+          <th>Pantalla</th>
+          <th>Procesador</th>
+          <th>RAM</th>
+          <th>Almacenamiento</th>
+          <th>Cámara</th>
+          <th>Batería1
