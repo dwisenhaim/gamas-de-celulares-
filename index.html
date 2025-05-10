@@ -10,20 +10,30 @@
 
   <!-- Header -->
   <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-3xl font-bold tracking-wide">Valhalla Móvil</h1>
-      <nav>
-        <ul class="flex space-x-6 text-lg">
-          <li><a href="#" class="hover:underline">Inicio</a></li>
-          <li><a href="#" class="hover:underline">Gamas</a></li>
-          <li><a href="#" class="hover:underline">Contacto</a></li>
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="/mnt/data/file-NrBJ7yXE1eDFKK2PSNdoXo" alt="Logo Valhalla Móvil" class="h-12 w-12 rounded-full border-2 border-white" />
+        <h1 class="text-2xl font-bold tracking-wide">Valhalla Móvil</h1>
+      </div>
+
+      <!-- Dropdown Menu -->
+      <div class="relative group">
+        <button class="text-lg font-semibold px-4 py-2 bg-white text-indigo-600 rounded hover:bg-gray-100 transition">
+          Menú
+        </button>
+        <ul class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+          <li><a href="#inicio" class="block px-4 py-2 hover:bg-indigo-100 text-gray-800">Inicio</a></li>
+          <li><a href="#gama-baja" class="block px-4 py-2 hover:bg-indigo-100 text-gray-800">Gama Baja</a></li>
+          <li><a href="#gama-media" class="block px-4 py-2 hover:bg-indigo-100 text-gray-800">Gama Media</a></li>
+          <li><a href="#gama-alta" class="block px-4 py-2 hover:bg-indigo-100 text-gray-800">Gama Alta</a></li>
         </ul>
-      </nav>
+      </div>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="bg-cover bg-center h-[60vh] flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9');">
+  <section id="inicio" class="bg-cover bg-center h-[60vh] flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9');">
     <div class="bg-black bg-opacity-60 p-10 rounded-xl text-center">
       <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Explora el mundo de los celulares</h2>
       <p class="text-lg md:text-xl">Comparativas, análisis y todo sobre las gamas móviles</p>
